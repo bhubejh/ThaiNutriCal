@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThaiNutri | Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a class="logo" href="home.html"><span>🍚</span> Thai<span>Nutri</span></a>
+  <nav>
+    <a href="home.html">Home</a><a class="active" href="calculator.html">Calculator</a>
+    <a href="recipe.html">Recipes</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+  <a class="nav-cta" href="recipe.html">Find a recipe →</a>
+</header>
+
+<main class="calculator-page">
+  <section class="page-intro">
+    <div class="eyebrow">🍜 THAI FOOD CALCULATOR</div>
+    <h1>What's in your<br><span>meal?</span></h1>
+    <p>Pick a food, type the amount in grams, and the calculator will give you an estimate.</p>
+  </section>
+
+  <section class="calculator-layout">
+    <div class="calc-panel">
+      <div class="panel-title"><span class="step-badge">01</span><div><h2>Add a food</h2><p>Start with something on your plate.</p></div></div>
+
+      <label for="foodSelect">Food</label>
+      <select id="foodSelect">
+        <option value="">Choose a Thai food...</option>
+      </select>
+
+      <div id="foodPreview" class="food-preview">
+        <span>🍽️</span><div><b>Pick a food above</b><small>Nutrition information will appear here.</small></div>
+      </div>
+
+      <label for="amountInput">Amount (grams)</label>
+      <input id="amountInput" type="number" min="1" placeholder="Example: 150">
+
+      <button id="addFood" class="button green full">＋ Add to my meal</button>
+      <p id="calcMessage" class="message"></p>
+    </div>
+
+    <div class="calc-panel meal-panel">
+      <div class="panel-title"><span class="step-badge orange">02</span><div><h2>My meal</h2><p>Everything you have added.</p></div></div>
+
+      <div id="mealList" class="meal-list">
+        <div class="empty-state"><span>🍽️</span><b>Your plate is empty</b><small>Add a food to get started.</small></div>
+      </div>
+
+      <div class="totals">
+        <div class="total-calories"><small>TOTAL CALORIES</small><strong id="totalCalories">0</strong><span>kcal</span></div>
+        <div class="macro-grid">
+          <div><small>PROTEIN</small><b id="totalProtein">0g</b></div>
+          <div><small>CARBS</small><b id="totalCarbs">0g</b></div>
+          <div><small>FAT</small><b id="totalFat">0g</b></div>
+        </div>
+      </div>
+
+      <button id="clearMeal" class="button outline full">Clear my meal</button>
+    </div>
+  </section>
+
+  <p class="data-note">Nutrition values are estimates for this school project and can vary by recipe, ingredients and portion size.</p>
+</main>
+
+<footer>
+  <div class="footer-grid"><div><a class="footer-logo" href="home.html">🍚 Thai<span>Nutri</span></a><p>Simple nutrition for familiar Thai food.</p></div><div><b>Explore</b><a href="home.html">Home</a><a href="recipe.html">Recipes</a></div><div><b>Project</b><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+  <div class="footer-bottom">© 2026 ThaiNutri <span>Eat curious. Learn more. 🌱</span></div>
+</footer>
+
+<script src="Script.js"></script>
+</body>
+</html>
